@@ -1,3 +1,6 @@
+.env
+logs/
+tmp/
 node_modules
 .next
 dist

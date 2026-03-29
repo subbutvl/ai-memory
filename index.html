@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Memory Chat UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="conversation-panel">
+        <div class="panel-header">
+          <h1>Conversations</h1>
+        </div>
+        <ul class="conversation-list" id="conversation-list"></ul>
+      </aside>
+
+      <main class="chat-panel">
+        <header class="chat-toolbar">
+          <input
+            id="search-bar"
+            class="search-bar"
+            type="search"
+            placeholder="Search conversations or messages"
+            aria-label="Search conversations or messages"
+          />
+        </header>
+
+        <section class="chat-viewer" id="chat-viewer" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
